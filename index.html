@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/menu.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <title>Novo de Novo</title>
 </head>
 
@@ -127,7 +128,7 @@
         <p></p>
       </div>
       <div class="service-bottom">
-        <div class="service-item">
+        <div class="service-item" data-aos="fade-up">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/car.png" /></div>
           <h2>Higienização interna automotiva</h2>
           <p>Transforme o interior do seu veículo com nosso serviço de higienização interna. Removemos sujeira, manchas
@@ -136,7 +137,7 @@
           <a href="index.html#cleanCar" class="button">Saiba mais agora!</a>
         </div>
 
-        <div class="service-item">
+        <div class="service-item" data-aos="fade-up">
           <div class="icon"><img src="https://img.icons8.com/?size=100&id=6RWZElK4wLmq&format=png&color=000000" /></div>
           <h2>Higienização de Estofados em Geral</h2>
           <p>No processo de limpeza e higienização removemos ácaros, fungos, bactérias, poeira e outros tipos de
@@ -146,7 +147,7 @@
           <a href="https://w.app/uIHXRQ" class="button">Orçamento Grátis</a>
         </div>
 
-        <div class="service-item">
+        <div class="service-item" data-aos="fade-up">
           <div class="icon"><img src="https://img.icons8.com/?size=100&id=13101&format=png&color=000000" /></div>
           <h2>Impermeabilização de Estofados</h2>
           <p>A impermeabilização de sofá é o processo de proteção das fibras do seu tecido, blindando a penetração de
@@ -207,30 +208,27 @@
           <p></p>
       </div>
       <div class="cleanCar-bottom">
-        <div class="cleanCar-item">
+        <div class="cleanCar-item" data-aos="fade-up">
           <h2>💎 Higienização Super Detalhada </h2>
-          <p>
-
-            ▫️Limpeza detalhada de todos os plásticos</p>
-          <p>▫️Higienização e sanitização dos cintos</p>
-          <p>▫️Limpeza e Higienização dos bancos </p>
-          <p>▫️Limpeza e Higienização do carpete </p>
-          <p>▫️ Limpeza e Higienização do teto </p>
-          <p>▫️Higienização do volante, câmbio e freio de mão </p>
+          <p>- Limpeza detalhada de todos os plásticos</p>
+          <p>- Higienização e sanitização dos cintos</p>
+          <p>- Limpeza e Higienização dos bancos </p>
+          <p>- Limpeza e Higienização do carpete </p>
+          <p>- Limpeza e Higienização do teto </p>
+          <p>- Higienização do volante, câmbio e freio de mão </p>
           <br>
           <a href="https://w.app/NovoDeNovo" class="button">Saiba mais agora!</a>
         </div>
 
-        <div class="cleanCar-item">
+        <div class="cleanCar-item" data-aos="fade-up">
           <h2>♦️ Higienização Interna Simples</h2>
-          <p>
-            ▪️Limpeza e Higienização dos bancos</p>
+          <p>- Limpeza e Higienização dos bancos</p>
 
-          <p>▪️Limpeza e Higienização do carpete e teto</p><br>
+          <p>- Limpeza e Higienização do carpete e teto</p><br>
           <a href="https://w.app/NovoDeNovoSE" class="button">Orçamento Grátis</a>
         </div>
 
-        <div class="cleanCar-item">
+        <div class="cleanCar-item" data-aos="fade-up">
 
           <h2>🔆 Limpeza e Higienização Bancos </h2>
           <p>Limpeza e Higienização somente dos bancos do veículo!</p><br>
@@ -258,8 +256,7 @@
 
           Temos como missão levar bem-estar, saúde e qualidade de vida, para as famílias em Sergipe!</h2>
         <p></p>
-        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..."
-          class="cta">Orçamento Grátis</a>
+    
       </div>
     </div>
   </section>
@@ -357,9 +354,9 @@
     // Função para iniciar o avanço automático de slides
     function startAutoSlide(carouselType) {
       if (carouselType === 'images') {
-        autoSlideIntervalImages = setInterval(() => moveCarouselSlide('images', 1), 3000); // Muda a cada 3 segundos
+        autoSlideIntervalImages = setInterval(() => moveCarouselSlide('images', 1), 2000); // Muda a cada 3 segundos
       } else if (carouselType === 'videos') {
-        autoSlideIntervalVideos = setInterval(() => moveCarouselSlide('videos', 1), 3000);
+        autoSlideIntervalVideos = setInterval(() => moveCarouselSlide('videos', 1), 2000);
       }
     }
 
@@ -451,24 +448,14 @@
 
 
   </script>
-  <!-- <script>
-
-    const backgroundImages = [
-      'url(/assets/img/back3.png)',
-      'url(/assets/img/back2.jpg)',
-      'url(/assets/img/back1.jpg)'
-    ];
-    let currentIndex = 0;
-    const heroSection = document.getElementById("hero");
-
-    function changeBackground() {
-      heroSection.style.backgroundImage = backgroundImages[currentIndex];
-      currentIndex = (currentIndex + 1) % backgroundImages.length;
-    }
-
-    setInterval(changeBackground, 5000);
-
-  </script> -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 3000,  // Tempo da animação (em milissegundos)
+      once: true,  // A animação acontece apenas uma vez
+      easing: 'ease-in-out',  // Tipo de transição
+    });
+  </script>
 </body>
 
 </html>
