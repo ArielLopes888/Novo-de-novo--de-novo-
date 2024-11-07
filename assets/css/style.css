@@ -95,9 +95,9 @@ p {
 	color: white;
 }
 
-.brand h1 span {
+/* .brand h1 span {
 	color: #1f949d;
-}
+} */
 
 /* Header section */
 #header {
@@ -224,7 +224,7 @@ p {
 	font-weight: 700;
 	display: block;
 	width: fit-content;
-	font-size: 5rem;
+	font-size: 4rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
@@ -241,7 +241,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: #1f949d;
+	background-color: #ffffff;
 	animation: text_reveal_box 0.8s ease;
 	animation-delay: 0.5s;
 }
@@ -301,7 +301,6 @@ p {
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
-	z-index: -1;
 	overflow: hidden;
 }
 
@@ -346,7 +345,6 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 	z-index: -1;
-	/* Z-index menor para permitir que o popup apareça acima */
 }
 
 #cleanCar .cleanCar-top {
@@ -354,10 +352,18 @@ p {
 	margin: 0 auto;
 }
 
+#cleanCar .cleanCar-top h2 {
+	margin-top: 100px;
+	font-size: 3rem;
+	color: rgb(0, 145, 173);
+}
+
 #cleanCar .cleanCar-bottom {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	/* Alinha os itens no topo */
 	justify-content: center;
+	/* Alinha os itens à esquerda (horizontalmente) */
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
@@ -374,7 +380,6 @@ p {
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
-	z-index: -1;
 	overflow: hidden;
 }
 
@@ -415,7 +420,17 @@ p {
 	padding: 20px;
 	background: #f4f4f4;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	/* Alinha os carrosséis verticalmente */
+	gap: 20px;
+	/* Espaçamento entre os carrosséis */
+	align-items: center;
+	/* Centraliza os carrosséis */
+}
+
+#carousel-section .carousel-top {
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .carousel-container {
@@ -440,7 +455,7 @@ p {
 .carousel-item img,
 .carousel-item video {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 
 .carousel-prev-btn,
@@ -469,6 +484,7 @@ p {
 .carousel-next-btn:hover {
 	background-color: rgba(0, 0, 0, 0.7);
 }
+
 
 
 /* About Section */
@@ -663,10 +679,9 @@ p {
 }
 
 
-
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #0072a7 20%, #485563 100%);
 	text-align: center;
 	padding: 20px 0;
 }
@@ -719,6 +734,11 @@ p {
 	margin-right: 10px;
 	width: 30px;
 	height: 30px;
+	color: #ffffff;
+}
+
+.social-icons a {
+	font-size: 1.8rem !important;
 }
 
 #footer h2 {
@@ -998,7 +1018,7 @@ p {
 
 @keyframes text_reveal {
 	100% {
-		color: white;
+		color: #1f949d;
 	}
 }
 
@@ -1030,7 +1050,7 @@ p {
 
 	/* Hero */
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 6.5rem;
 	}
 
 	/* End Hero */
@@ -1047,6 +1067,12 @@ p {
 	}
 
 	/* End Services Section */
+
+
+	.carousel-item img {
+		height: 700px;
+		/* Define uma altura menor para o item de imagem do carrossel */
+	}
 
 	/* Project */
 	#projects .project-item {

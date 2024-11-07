@@ -18,7 +18,7 @@
         <div class="brand">
           <a href="#hero">
             <div class="logo-container">
-              <img class="logo-img" src="assets/img/logo1.png" alt="img">
+              <img class="logo-img" src="assets/img/logo up-1.png" alt="img">
             </div>
           </a>
         </div>
@@ -26,9 +26,9 @@
           <ul id="nav-items">
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#services" data-after="Service">Serviços</a></li>
-            <li><a href="#projects" data-after="Projects">Projetos</a></li>
+            <li><a href="#results" data-after="Projects">Resultados</a></li>
             <li><a href="#about" data-after="About">Sobre</a></li>
-            <li><a href="#contact" data-after="Contact">Contato</a></li>
+            <li><a href="#footer" data-after="Contact">Contato</a></li>
           </ul>
         </div>
 
@@ -51,7 +51,7 @@
           const menuItems = document.getElementById('menu-items');
 
 
-          const itemTexts = ['Home', 'Serviços', 'Projetos Recentes', 'Sobre', 'Contato'];
+          const itemTexts = ['Home', 'Serviços', 'Resultados', 'Sobre', 'Contato'];
           const listItems = navItems.getElementsByTagName('li');
 
           for (let i = 0; i < listItems.length; i++) {
@@ -89,12 +89,10 @@
 
     <div class="hero container">
       <div>
-        <h1>Novo de Novo<span></span></h1>
-        <h2>Higienização de Estofados</h2>
+        <h1>Higienização de Estofados em Geral<span></span></h1>
 
 
-        <a href="https://wa.me/5579988381834?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button"
-          class="cta">Agora também em Carmópolis/SE</a>
+        <a href="https://w.app/NovoDeNovoCarmopolis" type="button" class="cta">Agora também em Carmópolis/SE</a>
 
       </div>
     </div>
@@ -135,7 +133,7 @@
           <p>Transforme o interior do seu veículo com nosso serviço de higienização interna. Removemos sujeira, manchas
             e odores. Entre em contato e dê ao seu
             carro o cuidado que ele merece!</p> <br>
-          <a href="index.html#services" class="button">Saiba mais agora!</a>
+          <a href="index.html#cleanCar" class="button">Saiba mais agora!</a>
         </div>
 
         <div class="service-item">
@@ -145,7 +143,7 @@
             sujidades.
 
             Além disso, deixamos seu estofado cheiroso e aumentamos sua vida útil.</p><br>
-          <a href="index.html#services" class="button">Orçamento Grátis</a>
+          <a href="https://w.app/uIHXRQ" class="button">Orçamento Grátis</a>
         </div>
 
         <div class="service-item">
@@ -155,91 +153,90 @@
             líquidos.
 
             Possui proteção UV que previne o desbotamento e ressecamento do tecido.</p><br>
-          <a href="index.html#services" class="button">Orçamento Grátis</a>
+          <a href="https://w.app/uIHXRQ" class="button">Orçamento Grátis</a>
         </div>
       </div>
   </section>
   <!-- End Service Section -->
 
 
-  <section class="carousel-section">
-    <div class="carousel-container">
+  <section id="results" class="carousel-section">
+
+    <div class="carousel-top">
+      <h1 class="section-title"><span>Resultados</span></h1>
+    </div>
+    <!-- Carrossel de Vídeos -->
+    <div class="carousel-container" id="carousel-videos">
       <div class="carousel-slide">
-        <div class="carousel-item">
-          <img src="assets/img/WhatsApp Image 2019-08-26 at 19.50.07 (2).jpeg" alt="Imagem 1">
-        </div>
-
-        <div class="carousel-item">
-          <video controls>
-            <source src="assets/img/VID_55741102_220803_980.mp4" type="video/mp4">
-            Seu navegador não suporta o vídeo.
-          </video>
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/WhatsApp Image 2020-06-18 at 17.17.09.jpeg" alt="Imagem 2">
-        </div>
-
-        <div class="carousel-item">
-          <video controls>
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-            Seu navegador não suporta o vídeo.
-          </video>
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/carro-limpo.jpg" alt="Imagem 3">
-        </div>
-
-        <div class="carousel-item">
-          <video controls>
-            <source src="assets/img/InShot_20220210_012426684.jpg" type="video/mp4">
-            Seu navegador não suporta o vídeo.
-          </video>
-        </div>
+        <div class="carousel-item"><video controls>
+            <source src="assets/img/imper.mp4" type="video/mp4">Seu navegador não suporta o vídeo.
+          </video></div>
+        <div class="carousel-item"><video controls>
+            <source src="assets/img/extracao.mp4" type="video/mp4">Seu navegador não suporta o vídeo.
+          </video></div>
+        <div class="carousel-item"><video controls>
+            <source src="assets/img/uva.mp4" type="video/mp4">Seu navegador não suporta o vídeo.
+          </video></div>
       </div>
-      <button class="carousel-prev-btn" onclick="moveCarouselSlide(-1)">❮</button>
-      <button class="carousel-next-btn" onclick="moveCarouselSlide(1)">❯</button>
+      <button class="carousel-prev-btn" onclick="moveCarouselSlide('videos', -1)">❮</button>
+      <button class="carousel-next-btn" onclick="moveCarouselSlide('videos', 1)">❯</button>
+    </div>
+
+
+    <!-- Carrossel de Imagens -->
+    <div class="carousel-container" id="carousel-images">
+      <div class="carousel-slide">
+        <div class="carousel-item"><img src="assets/img/cafe.png" alt="Imagem 1"></div>
+        <div class="carousel-item"><img src="assets/img/colchao.png" alt="Imagem 2">
+        </div>
+        <div class="carousel-item"><img src="assets/img/car.png" alt="Imagem 3"></div>
+      </div>
+      <button class="carousel-prev-btn" onclick="moveCarouselSlide('images', -1)">❮</button>
+      <button class="carousel-next-btn" onclick="moveCarouselSlide('images', 1)">❯</button>
     </div>
   </section>
+
+
 
   <!-- CleanCar Section -->
   <section id="cleanCar">
     <div class="cleanCar container">
       <div class="cleanCar-top">
         <h1 class="section-title"><span>Higienização Automotiva </span></h1>
-        <p></p>
+        <h2><span>Escolha o seu pacote:</span></2>
+          <p></p>
       </div>
       <div class="cleanCar-bottom">
         <div class="cleanCar-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/car.png" /></div>
-          <h2>Higienização interna automotiva</h2>
-          <p>Transforme o interior do seu veículo com nosso serviço de higienização interna. Removemos sujeira, manchas
-            e odores. Entre em contato e dê ao seu
-            carro o cuidado que ele merece!</p> <br>
-          <a href="index.html#cleanCar" class="button">Saiba mais agora!</a>
+          <h2>💎 Higienização Super Detalhada </h2>
+          <p>
+
+            ▫️Limpeza detalhada de todos os plásticos</p>
+          <p>▫️Higienização e sanitização dos cintos</p>
+          <p>▫️Limpeza e Higienização dos bancos </p>
+          <p>▫️Limpeza e Higienização do carpete </p>
+          <p>▫️ Limpeza e Higienização do teto </p>
+          <p>▫️Higienização do volante, câmbio e freio de mão </p>
+          <br>
+          <a href="https://w.app/NovoDeNovo" class="button">Saiba mais agora!</a>
         </div>
 
         <div class="cleanCar-item">
-          <div class="icon"><img src="https://img.icons8.com/?size=100&id=6RWZElK4wLmq&format=png&color=000000" /></div>
-          <h2>Higienização de Estofados em Geral</h2>
-          <p>No processo de limpeza e higienização removemos ácaros, fungos, bactérias, poeira e outros tipos de
-            sujidades.
+          <h2>♦️ Higienização Interna Simples</h2>
+          <p>
+            ▪️Limpeza e Higienização dos bancos</p>
 
-            Além disso, deixamos seu estofado cheiroso e aumentamos sua vida útil.</p><br>
-          <a href="index.html#cleanCar" class="button">Orçamento Grátis</a>
+          <p>▪️Limpeza e Higienização do carpete e teto</p><br>
+          <a href="https://w.app/NovoDeNovoSE" class="button">Orçamento Grátis</a>
         </div>
 
         <div class="cleanCar-item">
-          <div class="icon"><img src="https://img.icons8.com/?size=100&id=13101&format=png&color=000000" /></div>
-          <h2>Impermeabilização de Estofados</h2>
-          <p>A impermeabilização de sofá é o processo de proteção das fibras do seu tecido, blindando a penetração de
-            líquidos.
 
-            Possui proteção UV que previne o desbotamento e ressecamento do tecido.</p><br>
-          <a href="index.html#cleanCar" class="button">Orçamento Grátis</a>
+          <h2>🔆 Limpeza e Higienização Bancos </h2>
+          <p>Limpeza e Higienização somente dos bancos do veículo!</p><br>
+          <a href="https://w.app/fI4OQm" class="button">Orçamento Grátis</a>
         </div>
-      </div>
+      </div> 
   </section>
   <!-- End CleanCar Section -->
 
@@ -249,7 +246,7 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="assets/img/casal.jpeg" alt="img">
+          <img src="assets/img/img.jpeg" alt="img">
         </div>
       </div>
       <div class="col-right">
@@ -287,20 +284,27 @@
   <section id="footer">
     <div>
       <div class="logo-container">
-        <img class="logo-img" src="assets/img/logo1.png" alt="img">
+        <img class="logo-img" src="assets/img/logo up-1.png" alt="img">
       </div>
-      <br>
       <br>
       <br>
       <div class="social-icons">
-        <a href="https://api.whatsapp.com/send?phone=5571993302013&text=Ol%C3%A1%2C%20quero%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20Reis%20dos%20Cereais!"
+        <a n href="https://api.whatsapp.com/send?phone=5571993302013&text=Ol%C3%A1%2C%20quero%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20produtos%20Reis%20dos%20Cereais!"
           target="_blank">
-          <img src="assets/img/whatsapp-icon.png" alt="WhatsApp"></a>
-        <a href="https://www.instagram.com/reisdoscereaisbr/" target="_blank">
-          <img src="assets/img/instagram-icon.png" alt="Instagram"></a>
+          <img src="assets/img/whatsapp-icon.png" alt="WhatsApp"> 79988381834</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com//" target="_blank">
+          <img src="assets/img/instagram-icon.png" alt="Instagram">@novodenovose</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="/" target="_blank">
+          <img src="assets/img/loc.png" alt="Localization"> Aracaju/SE e Carmópolis/SE</a>
       </div>
     </div>
-    <p>Copyright © 2024 Reis dos Cereais. Todos os direitos reservados</p>
+    <br><br>
+    <a>Copyright © 2024 Reis dos Cereais. Todos os direitos reservados</a> <br>
     <a rel="nofollow" target="_blank" href="https://ariellisboalopes.netlify.app">Feito com <span class="heart">❤</span>
       por Ariel Lisboa</a>
   </section>
@@ -309,21 +313,94 @@
 
   <script src="./app.js"></script>
   <script>
-    // Função para exibir o popup de forma assíncrona assim que a página é carregada
+    // Definindo variáveis de índice para cada carrossel
+    let carouselSlideIndexImages = 0;
+    let carouselSlideIndexVideos = 0;
+
+    // Variáveis de intervalo automático para os carrosséis
+    let autoSlideIntervalImages;
+    let autoSlideIntervalVideos;
+
+    // Função para mostrar o slide do carrossel
+    function showCarouselSlide(carouselType, index) {
+      const carouselSlides = document.querySelectorAll(`#carousel-${carouselType} .carousel-item`);
+      let carouselSlideIndex = carouselType === 'images' ? carouselSlideIndexImages : carouselSlideIndexVideos;
+
+      if (index >= carouselSlides.length) {
+        carouselSlideIndex = 0;
+      } else if (index < 0) {
+        carouselSlideIndex = carouselSlides.length - 1;
+      }
+
+      const newTransformValue = -carouselSlideIndex * 100;
+      document.querySelector(`#carousel-${carouselType} .carousel-slide`).style.transform = `translateX(${newTransformValue}%)`;
+
+      // Atualiza o índice
+      if (carouselType === 'images') {
+        carouselSlideIndexImages = carouselSlideIndex;
+      } else {
+        carouselSlideIndexVideos = carouselSlideIndex;
+      }
+    }
+
+    // Função para mover o slide do carrossel
+    function moveCarouselSlide(carouselType, n) {
+      if (carouselType === 'images') {
+        carouselSlideIndexImages += n;
+        showCarouselSlide('images', carouselSlideIndexImages);
+      } else if (carouselType === 'videos') {
+        carouselSlideIndexVideos += n;
+        showCarouselSlide('videos', carouselSlideIndexVideos);
+      }
+    }
+
+    // Função para iniciar o avanço automático de slides
+    function startAutoSlide(carouselType) {
+      if (carouselType === 'images') {
+        autoSlideIntervalImages = setInterval(() => moveCarouselSlide('images', 1), 3000); // Muda a cada 3 segundos
+      } else if (carouselType === 'videos') {
+        autoSlideIntervalVideos = setInterval(() => moveCarouselSlide('videos', 1), 3000);
+      }
+    }
+
+    // Função para parar o avanço automático de slides
+    function stopAutoSlide(carouselType) {
+      if (carouselType === 'images') {
+        clearInterval(autoSlideIntervalImages);
+      } else if (carouselType === 'videos') {
+        clearInterval(autoSlideIntervalVideos);
+      }
+    }
+
+    // Inicia o avanço automático de ambos os carrosséis ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+      showCarouselSlide('images', carouselSlideIndexImages);
+      showCarouselSlide('videos', carouselSlideIndexVideos);
+      startAutoSlide('images');
+      startAutoSlide('videos');
+    });
+
+    // Pausa o avanço automático ao passar o mouse sobre o carrossel
+    document.getElementById('carousel-images').addEventListener('mouseenter', () => stopAutoSlide('images'));
+    document.getElementById('carousel-images').addEventListener('mouseleave', () => startAutoSlide('images'));
+
+    document.getElementById('carousel-videos').addEventListener('mouseenter', () => stopAutoSlide('videos'));
+    document.getElementById('carousel-videos').addEventListener('mouseleave', () => startAutoSlide('videos'));
+
+    // Outras funções da página não relacionadas ao carrossel
     document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("popup").classList.add("show");
     });
 
-    // Carregar o widget externo de forma assíncrona, sem afetar a exibição do popup
+    // Carregar o widget externo de forma assíncrona
     (function (d, script) {
       script = d.createElement('script');
       script.type = 'text/javascript';
       script.async = true;
       script.src = 'https://w.app/widget-v1/uIHXRQ.js';
       d.getElementsByTagName('head')[0].appendChild(script);
-    }(document));
+    })(document);
 
-    // Função para fechar o popup ao clicar no botão de fechar
     function closePopup() {
       document.getElementById("popup").classList.remove("show");
     }
@@ -334,23 +411,21 @@
       counters.forEach(counter => {
         const target = +counter.getAttribute('data-target');
         let count = 0;
-        const speed = 2000; // Tempo total para a contagem
+        const speed = 4000;
 
-        const increment = Math.ceil(target / (speed / 100)); // Incremento em cada intervalo
-
+        const increment = Math.ceil(target / (speed / 100));
         const interval = setInterval(() => {
           count += increment;
           if (count >= target) {
-            count = target; // Garante que não ultrapasse o alvo
-            clearInterval(interval); // Para o intervalo
+            count = target;
+            clearInterval(interval);
           }
-          // Verifica se o contador não é o que não deve ter o sinal +
           counter.innerText = counter.classList.contains('no-plus') ? count : `+${count}`;
         }, 100);
       });
     }
 
-    // Verifica se a seção dos contadores está visível para iniciar a contagem apenas ao entrar na seção
+    // Inicia a contagem de números ao rolar para a seção
     const countersSection = document.querySelector('.counters');
     let countStarted = false;
 
@@ -359,46 +434,21 @@
       const windowHeight = window.innerHeight;
 
       if (!countStarted && sectionTop < windowHeight) {
-        countStarted = true; // Evita que a contagem inicie mais de uma vez
+        countStarted = true;
         startCount();
       }
     });
 
-    // Para garantir que a contagem inicie se já estiver visível no carregamento da página
     window.addEventListener('load', () => {
       const sectionTop = countersSection.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
 
       if (sectionTop < windowHeight) {
-        countStarted = true; // Evita que a contagem inicie mais de uma vez
+        countStarted = true;
         startCount();
       }
     });
 
-    // Funções exclusivas do Carrossel
-    let carouselSlideIndex = 0;
-
-    function showCarouselSlide(index) {
-      const carouselSlides = document.querySelectorAll('.carousel-item');
-      if (index >= carouselSlides.length) {
-        carouselSlideIndex = 0;
-      } else if (index < 0) {
-        carouselSlideIndex = carouselSlides.length - 1;
-      }
-
-      const newTransformValue = -carouselSlideIndex * 100;
-      document.querySelector('.carousel-slide').style.transform = `translateX(${newTransformValue}%)`;
-    }
-
-    function moveCarouselSlide(n) {
-      carouselSlideIndex += n;
-      showCarouselSlide(carouselSlideIndex);
-    }
-
-    // Iniciar o carrossel mostrando a primeira imagem
-    document.addEventListener('DOMContentLoaded', () => {
-      showCarouselSlide(carouselSlideIndex);
-    });
 
   </script>
   <!-- <script>
