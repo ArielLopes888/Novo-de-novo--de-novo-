@@ -76,6 +76,8 @@ p {
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
 	animation: pulse 1s infinite;
+	text-align: center;
+	/* Centraliza os textos */
 }
 
 
@@ -83,6 +85,8 @@ p {
 	color: white;
 	background-color: #1f949d;
 	animation: none;
+	text-align: center;
+	/* Centraliza os textos */
 }
 
 .brand h1 {
@@ -181,7 +185,7 @@ p {
 
 #hero {
 	background-attachment: fixed;
-	background-image: url(/assets/img/background.png);
+	background-image: url(/assets/img/img.jpeg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -201,10 +205,18 @@ p {
 }
 
 #hero .hero {
+	display: flex;
+	flex-direction: column;
+	/* Alinha os itens verticalmente */
+	justify-content: center;
+	/* Centraliza verticalmente */
+	align-items: center;
+	/* Centraliza horizontalmente */
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
-	justify-content: flex-start;
+	height: 100vh;
+	/* Assegura que a altura seja a total da viewport */
 }
 
 #hero h1 {
@@ -247,9 +259,9 @@ p {
 	animation: text_reveal_h2 0.6s ease forwards;
 	animation-delay: 1.5s;
 	justify-content: center;
+	text-align: center;
+	/* Centraliza os textos */
 }
-
-
 
 /* End Hero Section */
 
@@ -517,125 +529,137 @@ p {
 
 /* Feedbacks section */
 #feedbacks {
-  background-color: #e4e3e1;
-  z-index: 1;
-  padding: 0 15px; /* Adiciona um padding lateral para evitar que o conteúdo ultrapasse as bordas */
+	background-color: #e4e3e1;
+	z-index: 1;
+	padding: 0 15px;
+	/* Adiciona um padding lateral para evitar que o conteúdo ultrapasse as bordas */
 }
 
 #feedbacks .feedbacks {
-  background-color: #e4e3e1;
-  flex-direction: column;
-  max-width: 100%; /* Ajusta para garantir que a largura máxima seja a largura da tela */
-  margin: 0 auto;
-  padding: 80px 0;
-  box-sizing: border-box; /* Garante que o padding não afete a largura */
+	background-color: #e4e3e1;
+	flex-direction: column;
+	max-width: 100%;
+	/* Ajusta para garantir que a largura máxima seja a largura da tela */
+	margin: 0 auto;
+	padding: 80px 0;
+	box-sizing: border-box;
+	/* Garante que o padding não afete a largura */
 }
 
 #feedbacks .feedbacks-header h1 {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #feedbacks .all-feedbacks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #feedbacks .feedbacks-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%; /* Garantir que os itens se ajustem 100% à largura disponível */
-  max-width: 800px; /* Limita a largura máxima */
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 30px;
-  box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	/* Garantir que os itens se ajustem 100% à largura disponível */
+	max-width: 800px;
+	/* Limita a largura máxima */
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 30px;
+	box-sizing: border-box;
 }
 
 #feedbacks .feedbacks-info {
-  padding: 30px;
-  flex-basis: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #8c8c8c -30%, #343434 100%);
-  color: white;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #8c8c8c -30%, #343434 100%);
+	color: white;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
 }
 
 #feedbacks .feedbacks-info a {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  color: #ffff;
-  background-color: #592d1400;
-  padding: 10px;
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #ffff;
+	background-color: #592d1400;
+	padding: 10px;
 }
 
 #feedbacks .feedbacks-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
+	font-size: 4rem;
+	font-weight: 500;
 }
 
 #feedbacks .feedbacks-info h2 {
-  font-size: 2.2rem;
-  font-weight: 500;
-  margin-top: 10px;
+	font-size: 2.2rem;
+	font-weight: 500;
+	margin-top: 10px;
 }
 
 #feedbacks .feedbacks-info p {
-  color: white;
+	color: white;
 }
 
 #feedbacks .feedbacks-img {
-  flex-basis: 50%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
 }
 
 #feedbacks .feedbacks-img img {
-  transition: 0.3s ease transform;
-  width: 100%; /* Garante que a imagem não ultrapasse os limites laterais */
+	transition: 0.3s ease transform;
+	width: 100%;
+	/* Garante que a imagem não ultrapasse os limites laterais */
 }
 
 #feedbacks .feedbacks-item:hover .feedbacks-img img {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  #feedbacks .feedbacks-item {
-    flex-direction: column;
-    width: 90%; /* Ajusta a largura para telas menores */
-  }
+	#feedbacks .feedbacks-item {
+		flex-direction: column;
+		width: 90%;
+		/* Ajusta a largura para telas menores */
+	}
 
-  #feedbacks .feedbacks-info {
-    padding: 15px; /* Reduz o padding para telas pequenas */
-  }
+	#feedbacks .feedbacks-info {
+		padding: 15px;
+		/* Reduz o padding para telas pequenas */
+	}
 
-  #feedbacks .feedbacks-img {
-    height: 200px; /* Ajusta a altura da imagem em telas pequenas */
-  }
+	#feedbacks .feedbacks-img {
+		height: 200px;
+		/* Ajusta a altura da imagem em telas pequenas */
+	}
 }
 
 @media (max-width: 480px) {
-  #feedbacks .feedbacks-info h1 {
-    font-size: 2.5rem; /* Ajusta o tamanho da fonte do título para telas menores */
-  }
+	#feedbacks .feedbacks-info h1 {
+		font-size: 2.5rem;
+		/* Ajusta o tamanho da fonte do título para telas menores */
+	}
 
-  #feedbacks .feedbacks-info h2 {
-    font-size: 1.8rem; /* Ajusta o tamanho da fonte do subtítulo para telas menores */
-  }
+	#feedbacks .feedbacks-info h2 {
+		font-size: 1.8rem;
+		/* Ajusta o tamanho da fonte do subtítulo para telas menores */
+	}
 
-  #feedbacks .feedbacks-info p {
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte do parágrafo para telas menores */
-  }
+	#feedbacks .feedbacks-info p {
+		font-size: 1.2rem;
+		/* Ajusta o tamanho da fonte do parágrafo para telas menores */
+	}
 }
 
 
@@ -643,6 +667,8 @@ p {
 /* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	text-align: center;
+	padding: 20px 0;
 }
 
 #footer .footer {
@@ -652,8 +678,51 @@ p {
 	padding-bottom: 10px;
 }
 
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.footer-contact {
+	text-align: right;
+}
+
+.footer-contact p {
+	margin-bottom: 10px;
+}
+
+.footer-img {
+	width: 250px;
+	height: auto;
+	margin-bottom: 0px;
+
+}
+
+.social-icons img {
+	margin-right: 10px;
+	width: 30px;
+	height: 30px;
+}
+
 #footer h2 {
-	color: white;
+	color: #ffffff;
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
@@ -661,30 +730,26 @@ p {
 	margin-bottom: 10px;
 }
 
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
-}
-
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-
 #footer p {
-	color: white;
+	color: #ffffff;
+	font-weight: 900;
 	font-size: 1.3rem;
+	margin: 0;
+	padding: 4rem;
 }
+
+
+#footer a {
+	color: rgb(255, 255, 255);
+	font-size: 1.2rem;
+}
+
+.heart {
+	color: #ff0202;
+}
+
+/* End Footer */
+
 
 /* Estilos do fundo do popup */
 .popup {
@@ -887,31 +952,6 @@ p {
 		/* Largura menor para telas maiores */
 		max-width: none;
 		/* Remove a largura máxima em telas maiores */
-	}
-
-	.count {
-		font-size: 4em;
-		/* Aumenta o tamanho do número em telas maiores */
-	}
-
-	p {
-		font-size: 1.5em;
-		/* Aumenta o tamanho do texto em telas maiores */
-	}
-}
-
-/* Media Queries para telas maiores */
-@media (min-width: 768px) {
-	.counters {
-		flex-direction: row;
-		/* Alinha em linha para telas maiores */
-		justify-content: space-around;
-		/* Espaço entre os contadores */
-	}
-
-	.counter {
-		width: 20%;
-		/* Largura menor para telas maiores */
 	}
 
 	.count {
