@@ -242,7 +242,7 @@ p {
 	height: 100%;
 	width: 0;
 	background-color: #ffffff;
-	animation: text_reveal_box 2.8s ease;
+	animation: text_reveal_box 1.8s ease;
 	animation-delay: 0.5s;
 }
 
