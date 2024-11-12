@@ -263,6 +263,41 @@ p {
 	/* Centraliza os textos */
 }
 
+.whatsapp-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #25D366;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	animation: pulse 1.5s infinite ease-in-out;
+}
+
+.whatsapp-button img {
+	width: 35px;
+	height: 35px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1.50);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+
 /* End Hero Section */
 
 /* Services Section */
